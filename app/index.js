@@ -69,7 +69,7 @@ export default class App extends Component {
 
 	handleAppStateChange(appState) {
 		if (appState === 'background') {
-			// TODO: Schedule bg notification
+			// TODO: Schedule bg notification for top of hour
 			PushNotification.localNotificationSchedule({
 			  message: "My Notification Message", // (required)
 			  date: new Date(Date.now() + (this.state.seconds * 1000))
